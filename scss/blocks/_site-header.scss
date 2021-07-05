@@ -1,0 +1,28 @@
+.site-header{
+    padding-top: 75px;
+}
+.site-header__nav{
+    @include flex-el;
+}
+.site-nav__features{
+    @include flex-el;
+    flex-grow: 1;
+}
+.site-logo{
+    margin-right: 80px;
+}
+.site-nav__list{
+    display: flex;
+    @include list-unstyled;
+    margin-right: auto;
+}
+.site-nav__item:not(:last-child){
+    margin-right: 40px;
+}
+.site-nav__item a{
+    text-decoration: none;
+    color: $white;
+}
+.site-nav__btn{
+    @include button-el;
+}
