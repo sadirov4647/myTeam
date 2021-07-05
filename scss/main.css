@@ -417,6 +417,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 140px;
 }
 
 .site-nav__features {
@@ -456,6 +457,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.site-nav__item a:hover {
+  color: #F67E7E;
+}
+
 .site-nav__btn {
   text-decoration: none;
   padding: 10px 32px;
@@ -471,5 +476,66 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   border: 2px solid transparent;
   color: #002529;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 255px;
+  position: relative;
+}
+
+.hero-title {
+  max-width: 635px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.hero-title::before {
+  position: absolute;
+  content: "";
+  background: url(/images/site-header/header-left-bg.png) no-repeat;
+  width: 125px;
+  height: 200px;
+  left: -120px;
+}
+
+.hero-title__color {
+  color: #F67E7E;
+}
+
+.hero-info {
+  max-width: 445px;
+  margin: 0;
+}
+
+.hero-info::before {
+  display: block;
+  content: "";
+  background-color: #79C8C7;
+  width: 50px;
+  height: 4px;
+  margin-bottom: 80px;
+}
+
+.hero-info::after {
+  position: absolute;
+  content: "";
+  background: url(/images/site-header/header-bottom-bg.png) no-repeat;
+  width: 360px;
+  height: 100px;
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

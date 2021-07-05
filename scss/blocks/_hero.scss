@@ -1,0 +1,48 @@
+.hero{
+    @include flex-el;
+    justify-content: space-between;
+    padding-bottom: 255px;
+    position: relative;
+}
+.hero-title{
+    max-width: 635px;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0;
+    margin-right: 30px;
+
+    &::before{
+        position: absolute;
+        content: "";
+        background: url(/images/site-header/header-left-bg.png) no-repeat;
+        width: 125px;
+        height: 200px;
+        left: -120px;
+    }
+}
+.hero-title__color{
+    color: $light-coral;
+}
+.hero-info{
+    max-width: 445px;
+    margin: 0;
+
+    &::before{
+        display: block;
+        content: "";
+        background-color: $rapture-blue;
+        width: 50px;
+        height: 4px;
+        margin-bottom: 80px;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        background: url(/images/site-header/header-bottom-bg.png) no-repeat;
+        width: 360px;
+        height: 100px;
+        bottom: 0;
+    }
+}

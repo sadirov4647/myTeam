@@ -3,6 +3,7 @@
 }
 .site-header__nav{
     @include flex-el;
+    margin-bottom: 140px;
 }
 .site-nav__features{
     @include flex-el;
@@ -22,6 +23,10 @@
 .site-nav__item a{
     text-decoration: none;
     color: $white;
+
+    &:hover{
+        color: $light-coral;
+    }
 }
 .site-nav__btn{
     @include button-el;
