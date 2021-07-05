@@ -5,3 +5,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@include breakpoint-down(576px){
+    max-width: 600px;
+}
