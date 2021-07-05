@@ -15,12 +15,13 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: 'Rubik', 'Arial', sans-serif;
+    font-family:$font-family;
     font-display: swap;
     font-size: 18px;
     line-height: 28px;
-    color: var(--titles-color);
-    background-color: #fff;
+    font-weight: 600;
+    color: $white;
+    background-color: $midnight-green;
     overflow-x: hidden;
 }
 
