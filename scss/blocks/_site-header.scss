@@ -1,5 +1,6 @@
 .site-header{
     padding-top: 75px;
+    background-color: $midnight-green;
 }
 .site-header__nav{
     @include flex-el;

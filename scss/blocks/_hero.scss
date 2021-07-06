@@ -46,3 +46,10 @@
         bottom: 0;
     }
 }
+
+
+@include breakpoint-down(576px){
+    .hero-info::after{
+        right: 0;
+    }
+}

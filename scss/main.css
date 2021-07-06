@@ -372,7 +372,6 @@ body {
   line-height: 28px;
   font-weight: 600;
   color: #fff;
-  background-color: #014E56;
   overflow-x: hidden;
 }
 
@@ -410,6 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-header {
   padding-top: 75px;
+  background-color: #014E56;
 }
 
 .site-header__nav {
@@ -592,5 +592,112 @@ h1, h2, h3, h4, h5, h6 {
   width: 360px;
   height: 100px;
   bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-info::after {
+    right: 0;
+  }
+}
+
+.manage-section {
+  background-color: #012F34;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  position: relative;
+}
+
+.manage__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.manage__title {
+  position: relative;
+  max-width: 445px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.manage__title::before {
+  position: absolute;
+  content: "";
+  background: #F67E7E;
+  width: 50px;
+  height: 4px;
+  top: -55px;
+}
+
+.manage__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.manage__list::after {
+  position: absolute;
+  content: "";
+  background: url(/images/manage/managebg.png) no-repeat;
+  width: 100px;
+  height: 244px;
+  right: 0;
+  bottom: 100px;
+}
+
+.manage__items {
+  max-width: 445px;
+  position: relative;
+}
+
+.manage__items::before {
+  content: "";
+  position: absolute;
+  left: -93px;
+  background: url(/images/manage/individuals.svg) no-repeat;
+  width: 72px;
+  height: 72px;
+}
+
+.manage__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.manage__items--title {
+  font-weight: bold;
+  color: #F67E7E;
+}
+
+.manage__items--info {
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .manage__title {
+    max-width: 240px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 56px;
+  }
+  .manage__items {
+    text-align: center;
+  }
+  .manage__list::after {
+    top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
