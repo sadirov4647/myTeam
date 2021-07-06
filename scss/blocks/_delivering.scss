@@ -1,0 +1,29 @@
+.delivering{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: $deep-green;
+}
+
+.delivering__title{
+    max-width: 932px;
+    margin-bottom: 56px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: bold;
+    
+    span{
+        color: $rapture-blue;
+    }
+}
+
+.delivering__list{
+    @include list-unstyled;
+    @include flex-el;
+    margin-left: -30px;
+}
+.delivering__item{
+    max-width: 350px;
+    margin-left: 30px;
+}
+
