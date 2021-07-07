@@ -1,0 +1,22 @@
+.site-footer{
+    padding: 48px 0;
+    background-color: $dark-green;
+}
+.logo-links__list{
+    @include list-unstyled;
+    max-width: 160px;
+    @include flex-el;
+    justify-content: space-between;
+}
+.logo-links__item a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-logo{
+    display: block;
+}
+.footer-article__info{
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+}

@@ -951,4 +951,42 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -77px;
   left: -120px;
 }
+
+.site-footer {
+  padding: 48px 0;
+  background-color: #002529;
+}
+
+.logo-links__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  max-width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-links__item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-logo {
+  display: block;
+}
+
+.footer-article__info {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
 /*# sourceMappingURL=main.css.map */
