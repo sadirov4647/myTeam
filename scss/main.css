@@ -957,6 +957,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #002529;
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .logo-links__list {
   padding: 0;
   margin: 0;
@@ -973,6 +987,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 125px;
 }
 
 .logo-links__item a {
@@ -988,6 +1003,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   line-height: 25px;
   opacity: 0.6;
+  margin: 0;
+}
+
+.footer-social__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .social__list {
@@ -1002,6 +1028,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 50px;
 }
 
 .social__items a {
@@ -1010,5 +1039,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .social__items:not(:last-child) {
   margin-right: 16px;
+}
+
+.footer-copyright {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

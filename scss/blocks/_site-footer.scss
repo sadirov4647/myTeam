@@ -2,11 +2,16 @@
     padding: 48px 0;
     background-color: $dark-green;
 }
+.footer__wrapper{
+    @include flex-el;
+    justify-content: space-between;
+}
 .logo-links__list{
     @include list-unstyled;
     max-width: 160px;
     @include flex-el;
     justify-content: space-between;
+    margin-right: 125px;
 }
 .logo-links__item a{
     text-decoration: none;
@@ -19,14 +24,27 @@
     font-size: 15px;
     line-height: 25px;
     opacity: 0.6;
+    margin: 0;
+}
+.footer-social__wrapper{
+    display: flex;
+    flex-direction: column;
 }
 .social__list{
     @include list-unstyled;
     @include flex-el;
+    align-self: flex-end;
+    margin-bottom: 50px;
 }
 .social__items a{
     display: block;
 }
 .social__items:not(:last-child){
     margin-right: 16px;
+}
+.footer-copyright{
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+    margin: 0;
 }
