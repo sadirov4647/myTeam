@@ -49,8 +49,17 @@
 .delivering__author--position{
     margin-top: 0;
     margin-bottom: 32px;
+    font-weight: 500;
+    font-style: italic;
 }
+.delivering__author--image{
+    transition: transform 0.4s ease;
 
+    &:hover{
+        transform: rotate(360deg);
+    }
+    
+}
 @include breakpoint-down(1170px){
     .delivering__item{
         width: calc(100% / 3 - 30px);

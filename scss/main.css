@@ -842,6 +842,20 @@ h1, h2, h3, h4, h5, h6 {
 .delivering__author--position {
   margin-top: 0;
   margin-bottom: 32px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.delivering__author--image {
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.delivering__author--image:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media only screen and (max-width: 1170px) {
