@@ -889,6 +889,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .delivering__list {
     margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .delivering__item {
     width: 100%;
@@ -934,5 +937,18 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
+}
+
+.main-footer__items::before {
+  content: "";
+  background: url(/images/main-footer/mainfooterbg.svg) no-repeat;
+  width: 100px;
+  height: 244px;
+  position: absolute;
+  width: 200px;
+  height: 145px;
+  bottom: -77px;
+  left: -120px;
 }
 /*# sourceMappingURL=main.css.map */
