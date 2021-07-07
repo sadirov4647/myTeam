@@ -1,0 +1,28 @@
+.main-footer{
+    background-color: $light-coral;
+    padding: 76px 0;
+}
+.main-footer__title{
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    color: $sacramento;
+    margin-bottom: 0;
+}
+.main-footer__btn{
+    padding: 10px 32px;
+    background-color: transparent;
+    border: 2px solid $sacramento;
+    border-radius: 24px;
+    cursor: pointer;
+    color: $sacramento;
+
+    &:hover{
+        background-color: $sacramento;
+        color: #fff;
+    }
+}
+.main-footer__items{
+    @include flex-el;
+    justify-content: space-around;
+}

@@ -895,4 +895,44 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
   }
 }
+
+.main-footer {
+  background-color: #F67E7E;
+  padding: 76px 0;
+}
+
+.main-footer__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #012F34;
+  margin-bottom: 0;
+}
+
+.main-footer__btn {
+  padding: 10px 32px;
+  background-color: transparent;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #012F34;
+}
+
+.main-footer__btn:hover {
+  background-color: #012F34;
+  color: #fff;
+}
+
+.main-footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=main.css.map */
