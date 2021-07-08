@@ -1,3 +1,10 @@
+.contact__hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact__hero--left{
+    margin-right: 30px;
+}
 .contact__hero--title{
     font-weight: bold;
     font-size: 64px;
@@ -18,7 +25,10 @@
     flex-direction: column;
 }
 .contact__list--items{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+.contact-input__wrapper{
+    margin-bottom: 24px;
 }
 .contact__items--info{
     margin: 0;
@@ -40,4 +50,39 @@
 }
 .innovation-img{
     background: url(/images/manage/productivity.svg) no-repeat;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+input,
+textarea{
+    width: 640px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    padding: 16px;
+}
+input::placeholder{
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+}
+.form-btn{
+    padding: 10px 32px;
+    background-color: #fff;
+    color: $deep-green;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    align-self: flex-start;
+    
+    &:hover{
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+    }
 }
