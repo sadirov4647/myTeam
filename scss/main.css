@@ -1190,4 +1190,17 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -30px;
   cursor: pointer;
 }
+
+.clients {
+  padding-top: 140px;
+  padding-bottom: 150px;
+  background-color: #012F34;
+}
+
+.client__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 70px;
+}
 /*# sourceMappingURL=main.css.map */
