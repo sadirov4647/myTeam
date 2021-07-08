@@ -1227,4 +1227,66 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 40px;
   margin-bottom: 40px;
 }
+
+.contact__hero--title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  margin-bottom: 16px;
+}
+
+.contact__hero--info {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #F67E7E;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contact__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__list--items {
+  margin-bottom: 30px;
+}
+
+.contact__items--info {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__items--info::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+}
+
+.network-img {
+  background: url(/images/manage/individuals.svg) no-repeat;
+}
+
+.implement-img {
+  background: url(/images/manage/implement.svg) no-repeat;
+}
+
+.innovation-img {
+  background: url(/images/manage/productivity.svg) no-repeat;
+}
 /*# sourceMappingURL=main.css.map */

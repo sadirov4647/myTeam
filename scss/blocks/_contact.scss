@@ -1,0 +1,43 @@
+.contact__hero--title{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+    margin-bottom: 16px;
+}
+.contact__hero--info{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: $light-coral;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.contact__list{
+    @include list-unstyled;
+    display: flex;
+    flex-direction: column;
+}
+.contact__list--items{
+    margin-bottom: 30px;
+}
+.contact__items--info{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+    &::before{
+        content: "";
+        width: 72px;
+        height: 72px;
+        margin-right: 23px;
+    }
+}
+.network-img{
+    background: url(/images/manage/individuals.svg) no-repeat;
+}
+.implement-img{
+    background: url(/images/manage/implement.svg) no-repeat;
+}
+.innovation-img{
+    background: url(/images/manage/productivity.svg) no-repeat;
+}
