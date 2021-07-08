@@ -1104,28 +1104,90 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   text-align: center;
   margin-bottom: 64px;
+  position: relative;
+}
+
+.meet__title::before {
+  content: "";
+  background: url(/images/about/titlebg.png) no-repeat;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  left: -120px;
+  top: -140px;
 }
 
 .meet-cards__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   margin-right: -30px;
   margin-bottom: -48px;
+  position: relative;
+}
+
+.meet-cards__list::after {
+  content: "";
+  background: url(/images/about/listbg.png) no-repeat;
+  width: 147px;
+  height: 100px;
+  position: absolute;
+  right: -90px;
+  bottom: -92px;
 }
 
 .meet-cards__item {
+  width: 302px;
   margin-right: 30px;
   margin-bottom: 48px;
   padding: 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   background-color: #012F34;
+  position: relative;
 }
 
 .founder-name {
   font-weight: bold;
   color: #79C8C7;
-  margin-top: 0;
+  margin: 0;
 }
 
 .founder-info {
-  font-style: 25px;
+  font-size: 15px;
   line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.meet-img {
+  margin-bottom: 16px;
+}
+
+.meet-btn {
+  position: absolute;
+  background-color: #F67E7E;
+  padding: 20px;
+  border-radius: 50%;
+  border: transparent;
+  bottom: -30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,23 +9,70 @@
     line-height: 1;
     text-align: center;
     margin-bottom: 64px;
+    position: relative;
+    
+    &::before{
+        content: "";
+        background: url(/images/about/titlebg.png) no-repeat;
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        left: -120px;
+        top: -140px;
+    }
 }
+
 .meet-cards__list{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    @include list-unstyled;
     margin-right: -30px;
     margin-bottom: -48px;
+    position: relative;
+    
+    &::after{
+        content: "";
+        background: url(/images/about/listbg.png) no-repeat;
+        width: 147px;
+        height: 100px;
+        position: absolute;
+        right: -90px;
+        bottom: -92px;
+    }
 }
 .meet-cards__item{
+    width: 302px;
     margin-right: 30px;
     margin-bottom: 48px;
     padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: $sacramento;
+    position: relative;
 }
 .founder-name{
     font-weight: bold;
     color: $rapture-blue;
-    margin-top: 0;
+    margin: 0;
 }
 .founder-info{
-    font-style: 25px;
+    font-size: 15px;
     line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.meet-img{
+    margin-bottom: 16px;
+}
+.meet-btn{
+    position: absolute;
+    background-color: $light-coral;
+    padding: 20px;
+    border-radius: 50%;
+    border: transparent;
+    bottom: -30px;
+    cursor: pointer;
 }
