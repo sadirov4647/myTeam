@@ -1047,4 +1047,48 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.6;
   margin: 0;
 }
+
+.about__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 142px;
+}
+
+.about__hero--title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+}
+
+.about__hero--info {
+  max-width: 730px;
+  position: relative;
+}
+
+.about__hero--info::before {
+  content: "";
+  background-color: #F67E7E;
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  top: -40px;
+}
+
+.about__hero--info::after {
+  content: "";
+  background: url(/images/about/about-headerbg.svg) no-repeat;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  right: -128px;
+}
 /*# sourceMappingURL=main.css.map */

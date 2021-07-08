@@ -1,0 +1,32 @@
+.about__hero{
+    @include flex-el;
+    justify-content: space-between;
+    padding-bottom: 142px;
+}
+.about__hero--title{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+.about__hero--info{
+    max-width: 730px;
+    position: relative;
+    
+    &::before{
+        content: "";
+        background-color: $light-coral;
+        width: 50px;
+        height: 4px;
+        position: absolute;
+        top: -40px;
+    }
+    &::after{
+        content: "";
+        background: url(/images/about/about-headerbg.svg) no-repeat;
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        right:-128px;
+    }
+}
