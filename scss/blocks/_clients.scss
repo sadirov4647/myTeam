@@ -8,4 +8,16 @@
     font-size: 48px;
     line-height: 1;
     margin-bottom: 70px;
+    text-align: center;
+    margin-right: -40px;
+    margin-bottom: -40px
+}
+.clients__list{
+    @include list-unstyled;
+    @include flex-el;
+    justify-content: space-between;
+}
+.clients__list--items{
+    margin-right: 40px;
+    margin-bottom: 40px;
 }

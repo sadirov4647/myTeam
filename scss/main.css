@@ -1202,5 +1202,30 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 70px;
+  text-align: center;
+  margin-right: -40px;
+  margin-bottom: -40px;
+}
+
+.clients__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients__list--items {
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */
