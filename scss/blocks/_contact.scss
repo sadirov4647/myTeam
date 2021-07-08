@@ -1,6 +1,7 @@
 .contact__hero{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 .contact__hero--left{
     margin-right: 30px;
@@ -84,5 +85,24 @@ input::placeholder{
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
+    }
+}
+
+
+@include breakpoint-between(850px, 1120px){
+    .contact__hero{
+        justify-content: center;
+    }
+}
+@include breakpoint-between(550px, 700px){
+    input,
+    textarea{
+        width: 450px;
+    }
+}
+@include breakpoint-between(320px, 550px){
+    input,
+    textarea{
+        width: 350px;
     }
 }
