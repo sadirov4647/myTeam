@@ -1095,5 +1095,37 @@ h1, h2, h3, h4, h5, h6 {
 .meet {
   padding-top: 140px;
   padding-bottom: 140px;
+  background-color: #002529;
+}
+
+.meet__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.meet-cards__list {
+  margin-right: -30px;
+  margin-bottom: -48px;
+}
+
+.meet-cards__item {
+  margin-right: 30px;
+  margin-bottom: 48px;
+  padding: 32px 24px;
+  background-color: #012F34;
+}
+
+.founder-name {
+  font-weight: bold;
+  color: #79C8C7;
+  margin-top: 0;
+}
+
+.founder-info {
+  font-style: 25px;
+  line-height: 25px;
 }
 /*# sourceMappingURL=main.css.map */
